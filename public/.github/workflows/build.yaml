@@ -1,0 +1,24 @@
+name: Build React Project
+
+on:
+ push:
+  branches:
+    - main
+
+ 
+jobs:
+ build:
+  name: Test Build 
+  runs-on: ubuntu-latest
+  steps:
+    - name: checkout
+      uses: actions/checkout@v3
+    - name: Set up React
+      uses: actions/setup-node@v3
+      with:
+        cache: npm
+    - name: Installation
+      run: npm install
+    - name: Build
+      run: npm run build
+      
