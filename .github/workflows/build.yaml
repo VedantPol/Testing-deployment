@@ -16,9 +16,8 @@ jobs:
     - name: Set up React
       uses: actions/setup-node@v3
       with:
-        cache: npm
+       cache: npm
     - name: Installation
       run: npm install
     - name: Build
       run: npm run build
-      
