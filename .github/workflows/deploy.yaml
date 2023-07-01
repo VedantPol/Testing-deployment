@@ -26,5 +26,5 @@ jobs:
       with:
         NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
         NETLIFY_SITE_ID: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-        build-dir: './build'
-        NETLIFY_DEPLOY_TO_PROD: true
+        build_directory: 'build'
+       
